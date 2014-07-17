@@ -3,7 +3,7 @@ console
 
 An Actionscript library for calling console.log and console.error in firebug
 
-If you want firebug style debugging you can do the following:
+If you want firebug style debugging then add the latest build to your actionscript sources and do the following:
 
     import console;
     console.log("Hello Foxy lady");

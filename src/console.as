@@ -7,10 +7,10 @@ package
 	public class console
 	{
 		public static function log(value):void {
-			console.call(['console.log', value], false);
+			console.call(['console.log', value], true);
 		}
 		public static function error(value):void {
-			console.call(['console.error', value], false);
+			console.call(['console.error', value], true);
 		}
 		public static function alert(value):void {
 			var args:Array = ['setTimeout', 'alert("' + String(value) + '");', 3];

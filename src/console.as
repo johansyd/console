@@ -7,14 +7,13 @@ package
 	public class console
 	{
 		public static function log(value):void {
-			console.call(['console.log', value], false);
+			console.call(['console.log', value]);
 		}
 		public static function error(value):void {
-			console.call(['console.error', value], false);
+			console.call(['console.error', value]);
 		}
 		public static function alert(value):void {
-			var args:Array = ['setTimeout', 'alert("' + String(value) + '");', 3];
-			console.call(args, true);
+			console.call(['setTimeout', 'alert("' + String(value) + '");', 3]);
 		}
 		private static function call(args:Array, async:Boolean = true):void {
 			if (async) {
